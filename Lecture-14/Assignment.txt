@@ -1,0 +1,35 @@
+1.Print all the even number between 1 to 100
+
+2.Print all the odd number between 1 to 100
+
+3.You are given two numbers find LCM of two numbers (for e.g : LCM of 3 and 4 will be 12)
+
+4.Draw the pattern below
+
+Take n as input using prompt and print below pattern
+
+e.g ,For n=5, you should print 5 rows
+
+*
+**
+***
+****
+*****
+
+
+Take n as input using prompt and print below pattern
+
+e.g ,For n=5, you should print 5 rows
+
+*****
+ ****
+  ***
+   **
+    *
+
+6.You are given two arrays arr1 = [1,2,3,4,5] and arr2=[10,20,30], concat these two arrays and print the result
+
+
+
+
+

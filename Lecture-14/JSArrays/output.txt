@@ -1,0 +1,191 @@
+const arr = [1,2,3,['Mango','Apple',['Kartik','Mathur']]];
+undefined
+arr[0]
+1
+arr[3]
+(3) ['Mango', 'Apple', Array(2)]
+arr[3][2]
+(2) ['Kartik', 'Mathur']
+arr[3][2][0]
+'Kartik'
+
+--------------------------------Array Methods---------
+
+======================---------push() and pop()-----------
+
+
+const fruits = ['Mango','Orange','Apple','PineApple','Grapes'];
+undefined
+fruits.push('Kiwi','Banana','Stawberry','Litchi');
+9
+fruits
+(9) ['Mango', 'Orange', 'Apple', 'PineApple', 'Grapes', 'Kiwi', 'Banana', 'Stawberry', 'Litchi']
+fruits.pop()
+'Litchi'
+fruits
+(8) ['Mango', 'Orange', 'Apple', 'PineApple', 'Grapes', 'Kiwi', 'Banana', 'Stawberry']
+const lastFruits = fruits.pop();
+undefined
+lastFruits
+'Stawberry'
+fruits
+(7) ['Mango', 'Orange', 'Apple', 'PineApple', 'Grapes', 'Kiwi', 'Banana']
+
+
+------------------------------------unshift and shift -------------
+
+const fruits = ['Mango','Orange','Apple','PineApple','Grapes'];
+undefined
+fruits
+(5) ['Mango', 'Orange', 'Apple', 'PineApple', 'Grapes']
+fruits.unshift('Litchi','Kiwi');
+7
+fruits
+(7) ['Litchi', 'Kiwi', 'Mango', 'Orange', 'Apple', 'PineApple', 'Grapes']
+const firstFruit = fruits.shift()
+undefined
+firstFruit
+'Litchi'
+fruits
+(6) ['Kiwi', 'Mango', 'Orange', 'Apple', 'PineApple', 'Grapes']
+
+---------------------------slice------
+
+const fruits = ['Mango','Orange','Apple','PineApple','Grapes'];
+undefined
+fruits.slice();
+(5) ['Mango', 'Orange', 'Apple', 'PineApple', 'Grapes']
+const newFruits = fruits.slice();
+undefined
+fruits===newFruits
+false
+fruits.slice(2);
+(3) ['Apple', 'PineApple', 'Grapes']
+fruits.slice(1,4);
+(3) ['Orange', 'Apple', 'PineApple']
+
+
+------------------------------splice------------------
+
+const fruits = ['Mango','Orange','Apple','PineApple','Grapes'];
+undefined
+fruits.splice(2,2,'Kiwi','Litchi','Strawberry');
+(2) ['Apple', 'PineApple']
+fruits
+(6) ['Mango', 'Orange', 'Kiwi', 'Litchi', 'Strawberry', 'Grapes']0: "Mango"1: "Orange"2: "Kiwi"3: "Litchi"4: "Strawberry"5: "Kiwi"6: "Litchi"7: "Strawberry"8: "Grapes"length: 9[[Prototype]]: Array(0)
+fruits.splice(2,0,'Kiwi','Litchi','Strawberry');
+[]
+fruits
+(9) ['Mango', 'Orange', 'Kiwi', 'Litchi', 'Strawberry', 'Kiwi', 'Litchi', 'Strawberry', 'Grapes']
+fruits.splice(2,1);
+['Kiwi']
+fruits
+(8) ['Mango', 'Orange', 'Litchi', 'Strawberry', 'Kiwi', 'Litchi', 'Strawberry', 'Grapes']
+
+
+------------------------------split and join------------------
+
+const url = 'http://facebook.com/user/profile.jpeg';
+undefined
+url
+'http://facebook.com/user/profile.jpeg'
+url.split('/');
+(5) ['http:', '', 'facebook.com', 'user', 'profile.jpeg']
+url.split('/').pop();
+'profile.jpeg'
+url.split('/').pop();
+'profile.jpeg'
+url.split('/').pop();
+'profile.jpeg'
+
+
+
+const arr = [1,2,3,4,5];
+undefined
+arr.join('-->');
+'1-->2-->3-->4-->5'
+
+--------------------------concat()-----------
+
+
+const arr1 = [20,30,40];
+undefined
+const arr2 = [11,22,33,44,55];
+undefined
+arr1.concat(arr2);
+(8) [20, 30, 40, 11, 22, 33, 44, 55]
+arr2.concat(arr1);
+(8) [11, 22, 33, 44, 55, 20, 30, 40]
+
+
+---------------------------includes, indexOf, reverse ---------
+
+const colors = ['blue','green','orange','purple'];
+undefined
+colors
+(4) ['blue', 'green', 'orange', 'purple']
+colors.includes('green')
+true
+colors.includes('white')
+false
+colors.indexOf('orange')
+2
+colors.indexOf('black')
+-1
+colors
+(4) ['blue', 'green', 'orange', 'purple']
+colors.reverse()
+(4) ['purple', 'orange', 'green', 'blue']
+colors
+(4) ['purple', 'orange', 'green', 'blue']
+
+
+-----------------------------------------------------------------
+------------------------------Arrays are reference type in JS.
+
+
+const colors = ['blue','green','orange','purple'];
+undefined
+colors
+(4) ['blue', 'green', 'orange', 'purple']
+const colorsCopy = colors;
+undefined
+colorsCopy
+(4) ['blue', 'green', 'orange', 'purple']
+colorsCopy.push(1,2,3,4,5);
+9
+colorsCopy
+(9) ['blue', 'green', 'orange', 'purple', 1, 2, 3, 4, 5]
+colors
+(9) ['blue', 'green', 'orange', 'purple', 1, 2, 3, 4, 5]
+const arr = [1,2,3,4,5];
+undefined
+arr[99];
+undefined
+colorsCopy.push([true,false]);
+10
+colorsCopy
+(10) ['blue', 'green', 'orange', 'purple', 1, 2, 3, 4, 5, Array(2)]
+
+----------------------------------JS Objects --------
+
+const person={
+    firstName:'Kartik',
+    lastName:'Mathur',
+    age:22,
+    isAdult:true,
+    favColor:['blue','green']
+}
+undefined
+person
+{firstName: 'Kartik', lastName: 'Mathur', age: 22, isAdult: true, favColor: Array(2)}
+person.firstName
+'Kartik'
+person.age
+22
+person.isAdult
+true
+person.favColor
+(2) ['blue', 'green']
+person.favColor[1]
+'green'

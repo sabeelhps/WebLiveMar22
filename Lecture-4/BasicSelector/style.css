@@ -1,0 +1,48 @@
+/* Universal Selector */
+
+*{
+    border:1px solid gray;
+}
+
+
+/* Id Selector */
+
+
+#heading{
+    color: palevioletred;
+    border: 8px solid green;
+}
+
+#para{
+    color: gray;
+    text-decoration: line-through;
+}
+
+
+/* Class Selector */
+
+.fav-movie{
+    color: purple;
+    font-weight: bold;
+}
+
+/* Attribute Selector */
+
+input[type="text"]{
+    background-color: lightblue;
+}
+
+input[placeholder="Password"]{
+    background-color: aqua;
+}
+
+
+/* Element Selector */
+h2{
+
+    color:palegreen;
+
+}
+
+
+

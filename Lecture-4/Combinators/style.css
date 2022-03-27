@@ -1,0 +1,37 @@
+/* Descendent selector */
+ul li a{
+    color:green;
+    font-size: 30px;
+}
+
+section span{
+    color: purple;
+    font-size: 30px;
+}
+
+div span{
+    color: orange;
+    font-weight: bold;
+}
+
+/* Child combinator */
+
+
+ol > li{
+    border-top: 5px solid green;
+    color: red;
+}
+
+
+/* Adjacent sibling combinator */
+
+h4+p{
+   color: green; 
+}
+
+
+/* General Sibling */
+
+h3~p{
+    color: palevioletred;
+}

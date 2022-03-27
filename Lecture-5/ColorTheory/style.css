@@ -1,0 +1,26 @@
+div{
+    border: 3px solid black;
+    height: 150px;
+    width: 150px;
+}
+
+
+/* Hexadecimal */
+div:nth-of-type(1){
+    background-color: #ee2211;
+}
+
+
+/* rgb format */
+div:nth-of-type(2){
+    background-color: rgb(20,200,30);
+}
+
+/* rgba  - a-> alpha channel */
+div:nth-of-type(3){
+    background-color: rgba(30,10,200,0.8);
+}
+
+div:nth-of-type(4){
+    background-color: #e9c46a;
+}

@@ -1,0 +1,32 @@
+/* Element Selector */
+h1{
+    color: red;
+}
+
+/* Class Selector */
+.top-heading{
+    color: orange;
+}
+
+
+/* Id Selector */
+#heading{
+    color: green;
+}
+
+section{
+    color: red;
+    border-top:5px solid green;
+    font-size: 30px;
+}
+
+ul{
+    /* border-top: inherit; */
+}
+
+li{
+    /* border-top: inherit; */
+    color: initial;
+}
+
+

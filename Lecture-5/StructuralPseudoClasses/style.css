@@ -1,0 +1,49 @@
+/* :root{
+    font-size: 30px;
+    color: red;
+} */
+
+
+/* li:first-child{
+    color: palevioletred;
+}
+
+li:last-child{
+    color: orange;
+} */
+/* 
+li:nth-of-type(3){
+    color:red;
+}
+
+li:nth-of-type(7){
+    color: aqua;
+} */
+
+
+/* 
+li:nth-of-type(odd){
+    color: purple;
+} */
+/* 
+li:nth-of-type(even){
+    color:green;
+} */
+
+
+/* li:nth-of-type(3n+5){
+    color: orange;
+}
+ */
+
+
+ h1::before{
+     content: 'Before Heading';
+     color: green;
+     border: 3px dashed red;
+ }
+
+ h1::after{
+     content: '\2665';
+     color: red;
+ }

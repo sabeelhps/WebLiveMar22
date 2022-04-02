@@ -1,0 +1,15 @@
+div{
+    width: 80vw;
+    border: 3px solid black;
+    height: 30px;
+    background-color: aqua;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    position: sticky;
+    top:10px;
+}
+
+li::before{
+    content: '\260E';
+}

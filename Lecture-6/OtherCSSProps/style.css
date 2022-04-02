@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+section{
+    width: 360px;
+    margin: 30px auto;
+    padding: 16px;
+    border:3px solid #ccc;
+    font-size: 1.6rem;
+    height: 70vh;
+    overflow: scroll;
+}
+
+ul{
+    list-style: none;
+}
+
+
+li{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 24px;
+    margin-bottom: 10px;
+}
+
+figure{
+    border: 2px solid #ccc;
+    padding: 16px;
+    max-width:400px;
+}
+
+figure img{
+    max-width: 90%;
+}

@@ -1,0 +1,43 @@
+
+section{
+    width: 75vw;
+    border: 20px solid #ccc;
+    padding: 16px;
+    margin: 20px auto;
+}
+
+
+img{
+    float: left;
+    width:400px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.para{
+    clear:both;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}

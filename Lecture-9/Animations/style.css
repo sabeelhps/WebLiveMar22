@@ -1,0 +1,38 @@
+section{
+    height: 30px;
+    border: 4px solid black;
+    background-color: palevioletred;
+    width: 250px;
+    animation-name: slider;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slider{
+    /* first keyframe animation will apply to section */
+    25%{
+        height: 200px;
+        background-color: lightgreen;
+    }
+    50%{
+        height: 400px;
+        background-color: lightcoral;
+        width: 400px;
+    }
+    70%{
+        height: 680px;
+        background-color: aqua;
+        width: 250px;
+    }
+
+    /* last keyframe animation will apply to section */
+    100%{
+        height: 900px;
+        background-color: lightskyblue;
+        width: 250px;
+    }
+
+}

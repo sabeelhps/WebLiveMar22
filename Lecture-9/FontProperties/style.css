@@ -1,0 +1,20 @@
+section{
+    width: 75vw;
+    border: 20px solid lightgray;
+    padding: 16px;
+    margin: 20px auto;
+}
+
+h1{
+    font-size: 4rem;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Orbitron', sans-serif;
+   
+}
+
+p{
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 0.15em;
+    line-height: 1.5;
+}

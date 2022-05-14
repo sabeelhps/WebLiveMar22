@@ -1,0 +1,36 @@
+const str = 'Hello';
+undefined
+for(const i of str){
+    console.log(i);
+}
+VM186:2 H
+VM186:2 e
+2VM186:2 l
+VM186:2 o
+undefined
+str[Symbol.iterator]
+ƒ [Symbol.iterator]() { [native code] }
+const mp = new Map();
+undefined
+mp.set('price',10000);
+Map(1) {'price' => 10000}
+mp.set('name','Apple');
+Map(2) {'price' => 10000, 'name' => 'Apple'}
+mp.set('qty',3);
+Map(3) {'price' => 10000, 'name' => 'Apple', 'qty' => 3}[[Entries]]0: {"price" => 10000}1: {"name" => "Apple"}2: {"qty" => 3}size: 3[[Prototype]]: Map
+for(let item of mp){
+    console.log(item);
+}
+VM652:2 (2) ['price', 10000]
+VM652:2 (2) ['name', 'Apple']
+VM652:2 (2) ['qty', 3]
+undefined
+for(let item of mp){
+    console.log(item);
+}
+VM691:2 (2) ['price', 10000]
+VM691:2 (2) ['name', 'Apple']
+VM691:2 (2) ['qty', 3]
+undefined
+mp[Symbol.iterator]
+ƒ entries() { [native code] }

@@ -1,0 +1,18 @@
+1.Write a function to filter out all the perfect square from given list of numbers.
+
+    e.g => nums = [1,2,3,4,5,6,7,8,9,10,11,16,18,20,36,40,49];
+          ans = [1,4,9,16,36,49];
+
+
+2. users = ['Amit','Ajay','Deepak','Mukesh'];
+           Rewards =   1-10 Rs. Random
+
+
+           listOfUser = [
+               {id:1,name:'Amit',reward:7},
+               {id:2,name:'Ajay',reward:4},
+               {id:3,name:'Deepak',reward:9},
+               {id:4,name:'Mukesh',reward:6}
+               ]
+
+

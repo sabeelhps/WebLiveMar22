@@ -19,14 +19,14 @@
 // }
 
 
-// console.log("START");
+console.log("START");
 
-// setTimeout(function cb() { 
-//     console.log("Inside CB");
-// }, 8000);
+setTimeout(function cb() { 
+    console.log("Inside CB");
+}, 8000);
 
 
-// console.log("END");
+console.log("END");
 
 
 

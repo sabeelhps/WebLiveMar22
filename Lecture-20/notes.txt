@@ -1,0 +1,79 @@
+Javascript
+    Basic JS
+    Conditionals
+    Arrays
+    Strings
+    Loops
+    Functions
+    HOF
+    Closure
+    Callbacks
+    Map, Sort, Filter, Reduce
+    Prototypes
+    Arrow Functions
+    This Keyword
+    class syntax
+    Constructor Functions
+
+
+
+------------------------DOM------
+
+DOM -> Document Object Model
+    -> document WEB APIs
+
+
+
+                    html
+                /           \
+        head                    body
+         |                        |
+         V                        V
+link script title           h1  div list 
+
+
+Two Step Process ----
+
+    1. To select the element
+    2. To manipulate
+
+
+DOM Selectors
+
+    1.getElementById()
+    2.getElementByClassName()
+    3.getElementByTagName()
+    4.querySelector() -->First instance of matched element.
+    5.querySelectorAll() -> selects all instance of matched element.
+
+
+HTML Collection => It's an array, but its not exactly the native js array i.e we cannot use different array e.g push,pop,shift etc on it.
+
+
+
+
+--------------------------------DOM properties----------
+
+    1.innerText --> aware of the styling
+    2.textContent --> Not aware of the styling (display:none)
+    3.innerHTML -->Get all the text along with the markup
+
+
+------------------------------------------------------------------------
+const input = document.querySelector('input')
+input.value
+'Sabeel'
+input.value='Kartik';
+'Kartik'
+
+
+----------------------------------getAttribute() and setAttribute()-------
+
+
+
+
+-------
+
+rgb(0-255, 0-255, 0-255);
+
+h1.style.backgroundColor='rgb()'

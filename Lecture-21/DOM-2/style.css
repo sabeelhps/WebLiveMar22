@@ -1,0 +1,14 @@
+.headline{
+    border: 4px solid black;
+    background-color: aqua;
+    padding: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: peru;
+}
+
+.two{
+    font-size: 36px;
+    font-style: italic;
+    text-shadow: 4px 4px 2px rgba(200,10,20);
+}

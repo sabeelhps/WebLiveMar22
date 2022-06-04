@@ -1,0 +1,66 @@
+
+
+classList
+
+    - add() ->add a class 
+    - remove() ->remove the class. 
+    - toggle() ->toggle the class.
+    - contains() ->checks whether the class is available on an element or not.
+
+
+-----------------------------Traversing a DOM tree-----------------------
+
+                html
+    head                body
+
+title script        h1 ul          p
+                        |          |
+                        |          V
+                        |         strong
+                        V
+                    li li li 
+
+
+    child -> Parent  : parentElement
+
+    parent -> child : children
+
+    sibling1 -> sibling2 : nextElementSibling
+
+    sibling1 -> sibling0 : previousElementSibling
+
+
+
+--------------------------Creating and deleting Elements--------
+
+    - document.createElement() ---> creates a new element
+    - parent.appendChild(child) ---> adds a child to parent at the end
+
+    - append() ---> New and good method - It can append both text and node at the end of the parent
+
+    - prepend() ---> This can also add text and node but as a first child
+
+    - before() --> add a node before the selected node as sibling
+
+    - after() ---> add a node after the selected node as sibling
+
+    - removeChild() ---> help to remove the element from the dom using the parent
+
+    - remove() --> help to remove the element from the dom without accessing the parent
+
+ ----------------------------------DOM Events------------------
+
+
+    - onclick ---> Inline and external way
+
+
+    - Assignment - Todo List App 
+                         - Create Todo
+                         - Delete Todo
+                         - Mark as completed
+                         - Highlight Todo
+                         - Edit todo 
+
+
+ 
+

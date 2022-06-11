@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    border: 2px solid black;
+    border-radius: 4px;
+    max-width: 480px;
+    margin: 20px auto;
+}
+
+#container h1{
+    text-align: center;
+}
+
+#screen{
+    font-size: 2.4rem;
+    display: block;
+    margin: 20px auto;
+}
+
+#container table{
+    border: 8px solid #ccc;
+    margin: 10px auto;
+}
+
+td{
+    height: 45px;
+    width: 65px;
+    border: 3px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.26);
+    transition: 100ms;
+}
+
+td button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    
+}
+
+td:active{
+    transform: scale(0.9);
+}

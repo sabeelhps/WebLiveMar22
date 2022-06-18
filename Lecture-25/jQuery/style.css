@@ -1,0 +1,13 @@
+
+
+.main-heading{
+    color: purple;
+    background-color: lightgreen;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.one{
+    border:2px solid black;
+}

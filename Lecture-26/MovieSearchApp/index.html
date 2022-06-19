@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+   <style>
+        section{
+            width: 70vw;
+            margin: 30px auto;
+            border: 5px solid #ccc;
+        }
+        input{
+            padding: 5px;
+            font-size: 30px;
+        }
+        h1{
+            text-align: center;
+        }
+        button{
+            padding: 5px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>Movie Search App</h1>
+        <form id="form">
+            <input id="inp" type="text" placeholder="Search">
+            <button id="btn" type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="result"></section>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

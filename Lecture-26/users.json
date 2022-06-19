@@ -1,0 +1,25 @@
+[
+    {
+        "id":1,
+        "name":"John",
+        "occupation":"software engineer",
+        "address":[]
+    },
+    {
+        "id":2,
+        "name":"Ajay",
+        "occupation":"Devs Ops Engineer",
+        "address":[
+            {
+                "addressid":1,
+                "city":"Delhi",
+                "country":"India"
+            },
+            {
+                "addressid":2,
+                "city":"Mumbai",
+                "country":"India"
+            }
+        ]
+    }
+]

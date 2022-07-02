@@ -1,0 +1,16 @@
+{
+  "name": "jokester",
+  "version": "1.0.0",
+  "description": "This is a random joke project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sabeel",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "figlet": "^1.5.2",
+    "give-me-a-joke": "^0.5.1"
+  }
+}

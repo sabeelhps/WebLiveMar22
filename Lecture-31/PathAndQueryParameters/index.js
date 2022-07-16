@@ -15,9 +15,9 @@ app.get('/user/:username', (req, res) => {
 });
 
 app.get('/post/:postId/comments/:commentId', (req, res) => {
-    const {postId,commentId}  = req.params;
+    const { postId, commentId } = req.params;
     res.send(`You are commenting on post ${postId} with commentid as ${commentId}`);
-})
+});
 
 
 app.get('/search', (req, res) => {
@@ -29,9 +29,9 @@ app.get('/search', (req, res) => {
 
 app.get('/hello', (req, res) => {
     res.send('Hello from the server')
-})
+});
 
 
 app.listen(8000, () => {
     console.log('server running at port 8000');
-})
+});

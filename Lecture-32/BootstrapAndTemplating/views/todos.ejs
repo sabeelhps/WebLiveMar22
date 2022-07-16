@@ -1,0 +1,13 @@
+<%- include('./partials/header')  %> 
+<%- include('./partials/navbar')  %> 
+
+<h1 class="text-center">Todos</h1>
+
+<ul class="list-group w-25 mx-auto">
+    <% for(const todo of todos){ %>
+        <li class="list-group-item"><%= todo  %> </li>
+    <% } %>
+</ul> 
+
+<%- include('./partials/footer')  %> 
+    

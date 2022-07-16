@@ -1,0 +1,17 @@
+<%- include("./partials/header")  %> 
+<%- include("./partials/navbar")  %> 
+<h1>Hello from EJS</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi molestiae laboriosam qui aperiam modi nam cumque. Praesentium atque ratione voluptates corporis in illum a ab ullam! Assumenda corporis dolores exercitationem!
+Sapiente at, quia sint dolorum pariatur ipsum ratione? Itaque tempore ipsam consequatur eveniet obcaecati velit quo mollitia. Harum aliquid rerum est, incidunt eius minima, quam autem officia, perspiciatis similique provident.</p>
+
+<h1>Magic Number : <%= 1+2+3+4 %> </h1>
+<h1>Number on the die : <%= Math.floor(Math.random()*6+1) %> </h1>
+<%if(Math.floor(Math.random()*6+1)%2===0){%>
+    <h2>THis is a Even Number </h2>
+<%}else{%>
+    <h2>This is a odd number</h2>
+<%}%>
+
+<%- include("./partials/footer")  %> 
+    
+

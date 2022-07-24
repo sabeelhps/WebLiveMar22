@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "title":"asjvhj,fdk.jhj",
+        "text":"sahgdvjhbj,kf.sdl",
+        "comments":[
+            {
+                "id":1,
+                "comment":"Nice Tweet"
+            },
+            {
+                "id":2,
+                "comment":"Good Tweet"
+            }
+        ],
+        username:"ABC",
+        likes:[2,3,1]
+    },
+    {
+        "id": 2,
+        "title":"asjvhj,fdk.jhj",
+        "text":"sahgdvjhbj,kf.sdl",
+        comments:[
+            {
+                "id":1,
+                "comment":"Nice Tweet"
+            },
+            {
+                "id":2,
+                "comment":"Good Tweet"
+            }
+        ],
+        username:"DEF",
+        likes:[1,2]
+    },
+    {
+        "id": 3,
+        "title":"asjvhj,fdk.jhj",
+        "text":"sahgdvjhbj,kf.sdl",
+        likes:[3,2]
+    },
+    {
+        "id": 4,
+        "title":"asjvhj,fdk.jhj",
+        "text":"sahgdvjhbj,kf.sdl"
+    },
+    {
+        "id": 5,
+        "title":"asjvhj,fdk.jhj",
+        "text":"sahgdvjhbj,kf.sdl"
+    },
+
+]

@@ -1,0 +1,10 @@
+views
+    - products ->products views
+    - auth -> auth pages
+    - layout -> layouts
+    - partials -> partials
+
+
+database(shopping-app-wb-lv-mar)
+    - products
+        

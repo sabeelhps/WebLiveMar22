@@ -1,0 +1,25 @@
+1.Async - Await
+2.Mongo Relationship
+3.Middlewares
+
+
+
+
+----------------------Relationship-------
+1 : 1 ---> Country and Capital
+
+1 : N ---> Tweets and Comments
+
+
+N : N ---> Actors and Movie
+
+1 :  Few 
+
+
+
+
+
+
+
+
+

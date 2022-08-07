@@ -1,0 +1,55 @@
+Adding Reviews to our Products (1 : N Relationship)
+
+
+products
+reviews 
+
+
+----products collection----
+{
+    name:'sghdjjkdf',
+    price:23476,
+    desc:'dsnhmsdjfbjhdfsjhj,sfkd',
+    img:'adshgfhmbfdshgvhfashvmbfd.jpg',
+    reviews:['1','2']
+}
+
+
+----------------------
+
+
+reviews collection ----
+
+[
+    {
+        "_id":'1',
+        "rating":3,
+        "comment":'Some comment'
+    },
+    {
+        "_id":'2',
+        "rating":4,
+        "comment":'Some other comment'
+    },
+]
+
+
+
+----------------------------flow create new review 
+
+submit form --> productid , review(rating,comment)
+
+1.find a product with given productid
+2.create a actual review in a review collection
+3.push the review into product.reviews array
+
+
+
+
+
+
+
+---------------Todos------
+
+
+1.Implement Pagination for products and Reviews

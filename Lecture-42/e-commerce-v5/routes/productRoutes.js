@@ -3,7 +3,6 @@ const router = express.Router();
 const Product = require('../models/Product');
 const { isLoggedIn } = require('../middleware');
 
-
 // Get all the products
 router.get('/products', async (req, res) => {
     const products = await Product.find({});
@@ -11,7 +10,7 @@ router.get('/products', async (req, res) => {
 });
 
 // Get form to create new product
-router.get('/products/new', (req, res) => {
+router.get('/products/new',isLoggedIn, (req, res) => {
     res.render('products/new');
 });
 
@@ -31,34 +30,57 @@ router.post('/products',isLoggedIn, async (req, res) => {
 
 // show a product
 router.get('/products/:productid', async (req, res) => {
-    const { productid } = req.params;
-    const product = await Product.findById(productid).populate('reviews');
-    res.render('products/show', { product });
+    try {
+        const { productid } = req.params;
+        const product = await Product.findById(productid).populate('reviews');
+        res.render('products/show', { product });
+    }
+    catch (e) {
+        req.flash('error', 'something went wrong');
+        res.redirect('/products');
+    }
 });
 
 // get the edit form
 router.get('/products/:productid/edit',isLoggedIn, async (req, res) => {
-    const { productid } = req.params;
-    const product = await Product.findById(productid);
-    res.render('products/edit', { product });
+    try {
+        const { productid } = req.params;
+        const product = await Product.findById(productid);
+        res.render('products/edit', { product });  
+    }
+    catch (e) {
+        req.flash('error', 'something went wrong');
+        res.redirect('/products');
+    }
 });
 
 // update a product
 router.patch('/products/:productid',isLoggedIn, async (req, res) => {
-    const { productid } = req.params;
-    const { name, price, desc, img } = req.body;
-    await Product.findByIdAndUpdate(productid, { name, price, desc, img });
-    req.flash('success', 'Updated the product successfully');
-    res.redirect(`/products/${productid}`);
+    try {
+        const { productid } = req.params;
+        const { name, price, desc, img } = req.body;
+        await Product.findByIdAndUpdate(productid, { name, price, desc, img });
+        req.flash('success', 'Updated the product successfully');
+        res.redirect(`/products/${productid}`);
+    }
+    catch (e) {
+        req.flash('error', 'something went wrong');
+        res.redirect('/products');
+    }
 });
 
+// Delete a product
 router.delete('/products/:productid',isLoggedIn, async (req, res) => {
-    const { productid } = req.params;
-    await Product.findByIdAndDelete(productid);
-    res.redirect('/products');
+    try {
+        const { productid } = req.params;
+        await Product.findByIdAndDelete(productid);
+        req.flash('success', 'Deleted the product successfully');
+        res.redirect('/products');
+    }
+    catch (e) {
+        req.flash('error', 'something went wrong');
+        res.redirect('/products');
+    }
 });
-
-
-
 
 module.exports = router;

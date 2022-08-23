@@ -6,6 +6,20 @@ const userSchema = new mongoose.Schema({
     // username: String, --> This is automatically added by passport-local-mongoose, no need to add ourselve
     // password: String, --> This is automatically added by passport-local-mongoose
     email: String,
+    cart: [
+        {   
+            _id:{id:false},
+            name: String,
+            price: Number,
+            img: String,
+            id: mongoose.Schema.Types.ObjectId,
+            count: {
+                type: Number,
+                default: 1,
+                min: [0, 'Quantity Cannot be less than 1']
+            }
+        }
+    ]
 });
 
 

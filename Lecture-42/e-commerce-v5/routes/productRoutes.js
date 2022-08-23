@@ -11,7 +11,7 @@ router.get('/products', async (req, res) => {
 });
 
 // Get form to create new product
-router.get('/product/new', (req, res) => {
+router.get('/products/new', (req, res) => {
     res.render('products/new');
 });
 

@@ -1,7 +1,6 @@
 <% layout('layout/boilerplate') -%>
 
 <div class="border p-3 mx-auto w-50">
-    <%- include("../partials/flash") %> 
     <h1>Sign Up</h1>
     <form action="/register" method="post">
         <div class="mb-3">
@@ -16,6 +15,7 @@
             <label class="form-label" for="password">Password</label>
             <input class="form-control" type="password" name="password" id="password">
         </div>
+        <p>Already have an account ? <a href="/login">Login</a></p>
         <button type="submit" class="btn btn-sm btn-success">SignUp</button>
     </form>
 </div

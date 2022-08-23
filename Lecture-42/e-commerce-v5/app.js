@@ -17,6 +17,7 @@ const User = require('./models/User');
 const productRoutes = require('./routes/productRoutes');
 const reviewRoutes = require('./routes/reviewRoutes');
 const authRoutes = require('./routes/authRoutes');
+const cartRoutes = require('./routes/cartRoutes');
 
 
 mongoose.connect('mongodb://localhost:27017/shopping-app-wb-lv-mar')
@@ -67,6 +68,7 @@ app.get('/', (req, res) => {
 app.use(productRoutes);
 app.use(reviewRoutes);
 app.use(authRoutes);
+app.use(cartRoutes);
 
 
 app.listen(3000,()=>{

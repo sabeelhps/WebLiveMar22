@@ -20,6 +20,11 @@
             <a class="nav-link text-capitalize" href="#"><%=currentUser.username%> </a>
           </li>
           <li class="nav-item">
+            <a href="/products/user/cart" class="nav-link"><i class="fas fa-shopping-cart"></i> 
+              <sup><span class="badge bg-danger"><%=currentUser.cart.length%></span></sup> 
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/logout">Logout</a>
           </li>
         <% }else{ %> 

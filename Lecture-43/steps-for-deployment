@@ -1,0 +1,11 @@
+
+
+
+1.Connect with the hostel database
+2.Go to your project folder
+3.git init
+4.heroku create
+5.git status
+6.git add -A
+7.git commit -m "initial deploy"
+8.git push heroku master

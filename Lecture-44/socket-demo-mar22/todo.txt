@@ -1,0 +1,3 @@
+1.Add cryptographic algorithm for msg encryption(end-to-end)
+2.Database(mongo) for message persitence
+3.Add Authentication

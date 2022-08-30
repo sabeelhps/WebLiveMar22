@@ -27,6 +27,10 @@ io.on('connection', (socket) => {
     });
 });
 
+io.on('disconnect', (socket) => {
+    console.log(`client with socket id ${socket.id} got disconnected`)
+});
+
 
 
 const port = 3000;

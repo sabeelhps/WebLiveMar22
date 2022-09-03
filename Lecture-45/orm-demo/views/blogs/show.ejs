@@ -1,0 +1,20 @@
+<% layout('layout/boilerplate') -%>
+
+  
+<div>
+    <a class="btn btn-sm btn-success" href="/blogs/<%=blog.id%>/edit">Edit</a>
+    <form class="d-inline-block" action="/blogs/<%=blog.id%>?_method=DELETE" method="post">
+        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+    </form>
+    
+</div>
+<section class="container"> 
+    <div class="mb-3">
+    <img  class="d-block mx-auto img-fluid" src="<%=blog.img%> " alt="" style="height: 300px;">
+    </div>
+    <h2 class="display-4 text-center"><%=blog.title%> </h2>
+    <p><%=blog.blogText%></p>
+</section>
+
+
+

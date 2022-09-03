@@ -1,0 +1,27 @@
+<% layout('layout/boilerplate') -%>
+
+
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <form action="/blogs" method="post">
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control" type="text" name="title" id="title">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="img">Image</label>
+                    <input class="form-control" type="text" name="img" id="img">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="author">Author</label>
+                    <input class="form-control" type="text" name="author" id="author">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="blogText">Blog</label>
+                    <textarea class="form-control" name="blogText" id="blogText" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-sm btn-success">Submit</button>
+            </form>
+        </div>
+    </div>
+

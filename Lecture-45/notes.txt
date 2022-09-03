@@ -1,0 +1,30 @@
+Tech Stack
+    Frontend - EJS (HTML, CSS, JS, Bootstrap)
+    Backend
+        - MongoDB
+        - Express
+
+
+HTML, CSS, JS
+
+Backend
+    -MySQL
+    -Express
+
+
+In SQL DB, we have tables(relation)
+    ORM - Object relational mapper(maps the table to the js object)
+
+
+
+CAP - Consistency, Availability, Partition tolerance
+
+SQL databases -> they ensures more Consistency over availability (very important)
+              -> If schema is well defined 
+
+NoSQL -> they ensures more availability over consitency
+      -> good if schema is dynamic or not well strcutured
+      -> if u want to store data as key-value pairs
+
+    
+Blog.update(), Blog.findOne()

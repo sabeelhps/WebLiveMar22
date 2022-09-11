@@ -1,0 +1,6 @@
+useState -> its a hook provided by react
+        -> Technically its a function
+        -> it returns an array containing only two values
+
+
+    const [value,setValue]=useState(intaialValue);

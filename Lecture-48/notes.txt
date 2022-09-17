@@ -1,0 +1,14 @@
+
+App component structure --------
+
+App
+    - Todo App
+        -Form
+        -TodoList 
+            -Todo
+            -Todo
+            -Todo
+            -Todo
+
+
+-----------------------------------

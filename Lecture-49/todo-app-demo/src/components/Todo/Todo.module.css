@@ -1,0 +1,19 @@
+.todo{
+    width: 360px;
+    padding: 16px;
+    background-color: rgb(72, 10, 72);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.16);
+    margin-bottom: 10px;
+    color:white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.todo-text{
+    margin-left: 10px;
+}
+
+.todo-icon{
+    float:right;
+    cursor: pointer;
+}

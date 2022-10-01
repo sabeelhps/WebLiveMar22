@@ -1,0 +1,10 @@
+CORS -> Cross Origin Resource Sharing
+
+
+
+
+
+
+
+3001        ----->                        3000
+React Server                       Express Server

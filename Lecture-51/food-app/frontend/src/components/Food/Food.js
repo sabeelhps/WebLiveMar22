@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react';
 import styles from './Food.module.css';
+import CartContext from '../../store/cart-context';
 
 const Food = (props) => {
+
+  const { addToCart } = useContext(CartContext);
+
+  const addToCartHandler = () => {
+    addToCart({
+      id: props.id,
+      name: props.name,
+      price: props.price,
+      desc: props.desc,
+      qty: 1
+    });
+  }
+
   return (
     <li className={styles.food}>
     <div>
@@ -16,7 +30,7 @@ const Food = (props) => {
             min="1"
             defaultValue={1}
         />
-        <button className={styles['add-btn']}>+ Add</button>
+        <button onClick={addToCartHandler} className={styles['add-btn']}>+ Add</button>
     </div>
 </li>
   )

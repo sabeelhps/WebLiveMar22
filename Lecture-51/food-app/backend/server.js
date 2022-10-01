@@ -10,13 +10,10 @@ mongoose.connect('mongodb://localhost:27017/food-app-mar22')
 
 //Middlewares 
 app.use(cors());
-
-
+app.use(express.json());
 
 // All apis
 app.use(foodApi);
-
-
 
 
 app.listen(8000,()=>{

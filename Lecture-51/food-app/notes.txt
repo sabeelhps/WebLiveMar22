@@ -1,9 +1,11 @@
+HomeWork
+
+- Increment and decrement the quantity in the cart
+- Add Authentication and User Model to our app using JWT.
+
+
+
 CORS -> Cross Origin Resource Sharing
-
-
-
-
-
 
 
 3001        ----->                        3000
